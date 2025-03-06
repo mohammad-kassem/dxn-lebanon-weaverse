@@ -98,7 +98,6 @@ let Slide = forwardRef<HTMLDivElement, SlideProps>((props, ref) => {
       <div
         className={variants({ contentPosition, width, gap, verticalPadding })}
       >
-        hello
         {children}
       </div>
     </div>

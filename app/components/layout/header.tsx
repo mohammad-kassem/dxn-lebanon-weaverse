@@ -94,11 +94,12 @@ export function Header() {
         <Link to="/search" className="p-1.5 lg:hidden">
           <MagnifyingGlass className="w-5 h-5" />
         </Link>
-        <Logo />
-        <DesktopMenu />
+        <div className="text-lg sm:text-2xl font-medium line-clamp-1">
+            DXN Lebanon
+          </div>        <DesktopMenu />
         <div className="flex items-center gap-1 z-1">
           <PredictiveSearchButton />
-          <AccountLink className="relative flex items-center justify-center w-8 h-8" />
+          {/* <AccountLink className="relative flex items-center justify-center w-8 h-8" /> */}
           <CartDrawer />
         </div>
       </div>

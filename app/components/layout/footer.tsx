@@ -84,17 +84,17 @@ export function Footer() {
     },
     {
       name: "X",
-      to: socialX,
+      to: 'socialX',
       icon: <XLogo className="w-5 h-5" />,
     },
     {
       name: "LinkedIn",
-      to: socialLinkedIn,
+      to: 'socialLinkedIn',
       icon: <LinkedinLogo className="w-5 h-5" />,
     },
     {
       name: "Facebook",
-      to: socialFacebook,
+      to: 'socialFacebook',
       icon: <FacebookLogo className="w-5 h-5" />,
     },
   ];
@@ -115,7 +115,7 @@ export function Footer() {
         <div className="space-y-9">
           <div className="w-full grid lg:grid-cols-3 gap-8">
             <div className="flex flex-col gap-6">
-              {footerLogoData ? (
+              {/* {footerLogoData ? (
                 <div className="relative" style={{ width: footerLogoWidth }}>
                   <Image
                     data={footerLogoData}
@@ -126,10 +126,14 @@ export function Footer() {
                 </div>
               ) : (
                 <div className="font-medium text-base uppercase">
-                  {shopName}
+                  DXN Lebanon
                 </div>
-              )}
-              {bio ? <div dangerouslySetInnerHTML={{ __html: bio }} /> : null}
+              )} */}
+                <div className="font-medium text-2xl uppercase">
+                  DXN Lebanon
+                </div>
+              {/* {bio ? <div dangerouslySetInnerHTML={{ __html: bio }} /> : null} */}
+              One World, One Market
               <div className="flex gap-4">
                 {socialItems.map((social) =>
                   social.to ? (
@@ -146,11 +150,18 @@ export function Footer() {
                 )}
               </div>
             </div>
-            <div className="flex flex-col gap-6">
+            {/* <div className="flex flex-col gap-6">
               <div className="text-base">{addressTitle}</div>
               <div className="space-y-2">
                 <p>{storeAddress}</p>
                 <p>Email: {storeEmail}</p>
+              </div>
+            </div> */}
+               <div className="flex flex-col gap-6">
+              <div className="text-base">{addressTitle}</div>
+              <div className="space-y-2">
+                <p>Beirut, Lebanon</p>
+                <p>Email: dxn-lebanon@outlook.com</p>
               </div>
             </div>
             <div className="flex flex-col gap-6">
@@ -202,7 +213,7 @@ export function Footer() {
           <div className="flex gap-2 ">
             <CountrySelector />
           </div>
-          <p>{copyright}</p>
+          <p>© 2025 DXN. All rights reserved.</p>
         </div>
       </div>
     </footer>

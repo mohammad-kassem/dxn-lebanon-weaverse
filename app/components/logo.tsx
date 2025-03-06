@@ -45,9 +45,9 @@ export function Logo() {
               />
             )}
           </>
-        ) : (
+        ) : (  
           <div className="text-lg sm:text-2xl font-medium line-clamp-1">
-            {shopName}
+            DXN Lebanon
           </div>
         )}
       </div>
